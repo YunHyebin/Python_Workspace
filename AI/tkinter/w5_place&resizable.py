@@ -1,0 +1,22 @@
+from tkinter import *
+w5 = Tk()
+w5.title("pack 배치 관리자")
+label1 = Label(w5, text = "패스워드")
+entry1 = Entry(w5, show = "*")
+btn1 = Button(w5, text= "확인")
+btn2 = Button(w5, text= "취소")
+#위젯배치: pack()
+label1.pack()
+entry1.pack()
+btn1.pack()
+btn2.pack()
+
+#위젯배치: place()
+label1.place(x=10, y=10)
+entry1.place(x=100, y=10)
+btn1.place(x=100, y=50)
+btn2.place(x=150, y=50)
+
+w5.geometry("300x100")
+w5.resizable(False, False)
+w5.mainloop()
